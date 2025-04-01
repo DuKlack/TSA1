@@ -144,16 +144,34 @@
                 background-color: #178626;
                 border-radius: 10px;
             }
+            .left_side {
+                width: 30%;
+                margin-left: 10px;
+                height: 100%;
+                display: flex;
+                flex-direction: column;
+                justify-content: space-between;
+            }
             .ranking {
                 text-align: center;
-                width:20%;
+                width:90%;
                 height: 45%;
                 padding: 20px;
+                padding-top: 0;
                 background-color: #fff;
                 border-radius: 10px;
                 box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
             }
-           
+            
+           .weather{
+            width: 90%;
+            margin-top: 10px;
+            height: 45%;   
+            padding: 20px; 
+            background-color: #fff;
+            border-radius: 10px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+           }
        
         </style>
     </head>
@@ -207,7 +225,7 @@
                         <div class="point">+10 </div>
                     </div>
             </div>
-            
+                <div class="left_side">
                     <div class="ranking">
                         <h2>Ranking</h2>
                         <div class="rank">
@@ -223,9 +241,13 @@
                         </div>
 
                     </div>
-                    <div class="weather"></div>
+                    <div class="weather">
+                        <h2>Weather</h2>
+                        <div id="temperature"></div>
+                        <div id="rain"></div>
+                    </div>
                 </div>
-              
+            </div>
     </body>
 
 </html>
