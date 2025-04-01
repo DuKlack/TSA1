@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+        <script src="https://kit.fontawesome.com/018043deb3.js" crossorigin="anonymous"></script>
+        <link rel="stylesheet" type="text/css" href="styles.css">
+        <script src="weather.js"></script>
+        <style>
+            body {
+                background-color: #f0f0f0;
+                font-family: Arial, sans-serif;
+             
+                padding: 20px;
+            }
+            a {
+                text-decoration: none;
+                color: #333;
+            }
+            .navbar {
+                flex-direction: row;
+                display: flex;
+                align-content: space-between;
+                width: 100%;
+                height: 3rem;
+            }  
+            .logo {
+                width: 20%;
+                align-items: center;
+                justify-content: center;
+                margin-right: 20px;
+            }
+            .logo img {
+                width: 150px;
+                height: auto;
+            }
+           .nav-buttons {
+                width: 60%;
+                display: flex;
+                gap: 20px;
+                align-items: f; /* Aligns items vertically */
+                justify-content: center; /* Aligns buttons to the right */
+                align-items: center; /* Aligns buttons vertically */
+                border: #007BFF solid 2px;
+                border-radius: 25px;
+                background-color: #007BFF;
+            }
+            .nav-buttons a {
+                word-spacing: 20px;
+                padding: 10px 20px;
+                color: white;
+                transition: background-color 0.3s ease;
+            }
+            .nav-buttons a:hover {
+                background-color: #0056b3;
+            }
+            .User_icon {
+                width: 20%;
+                display: inline-flex;
+                align-items: center; /* Aligns content inside */
+                margin-right: 20px;
+                
+            }
+            .User_icon h3 {
+                margin-left: 10px; /* Space between icon and text */
+                color: #333;
+            }
+            .User_icon img {
+                width: 50px;
+                height: 50px;
+                border-radius: 50%;
+            }
+            main {
+                margin-top: 10px;
+                margin-left: 20px;
+                margin-right: 20px;
+              
+            }
+            .important_stuff {
+                display: flex;
+                flex-direction: row;
+                height: 300px;
+                justify-content: center;
+                margin-top: 20px;
+            }
+            .to_do_list {
+
+                text-align: center;
+                width: 60%;
+                height: fit-content;
+                padding: 20px;
+                background-color: #fff;
+                border-radius: 10px;
+                box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            }
+            .to_do_list h2 {
+                margin: 5px;
+                font-size: 24px;
+                color: #333;
+            }
+            .task {
+                width: 90%; 
+                margin-bottom: 5px;
+                align-items: center ;
+                display: flex;
+                height: fit-content;
+                padding: 20px;
+                background-color: #fd1919;
+                border-radius: 10px;
+                box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            }
+            .task_icon {
+                width: fit-content;
+                height: 100%;
+                font-size: larger;
+            }
+            .task_description {
+                text-align: left;
+                display: grid;
+                width: 80%;
+                height: 100%;
+                padding: 10px;
+                padding-top: 0;
+                padding-bottom: 0;
+                margin-left: 5px;
+            }
+            .task_description h3 {
+                margin: 0;
+                font-size: 15px;
+            }
+            .task_description p {
+                margin: 0;
+                font-size: 10px;
+            }
+            .point{
+                width: 20%;
+                height: 100%;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                font-size: 20px;
+                color: rgb(0, 0, 0);
+                background-color: #178626;
+                border-radius: 10px;
+            }
+            .ranking {
+                text-align: center;
+                width:20%;
+                height: 45%;
+                padding: 20px;
+                background-color: #fff;
+                border-radius: 10px;
+                box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+            }
+           
+       
+        </style>
+    </head>
+
+    <body>
+        <header>
+            
+            <div class="navbar">
+                <div class="logo">
+                    <!-- Replace with your logo URL -->
+                    <a href="https://www.example.com" target="_blank">
+                        <img src="https://via.placeholder.com/150" alt="Logo">
+                    </a>
+                </div>
+                <div class="User_icon">
+                    <img src="https://via.placeholder.com/50" alt="User Icon">
+                    <H3>catnam</H3>
+                </div>
+                <div class="nav-buttons">
+                    
+                    <a href="#Leaderboard"><i class="fa-solid fa-chart-simple"></i>Leaderboard</a>
+
+                    <a href="#Achivement "><i class="fa-solid fa-star"></i>Achivement</a>
+                    <a href="#Resources"><i class="fa-solid fa-globe"></i>Resources</a>
+                </div>
+        </header>
+        <main>
+            <h1>Hi There</h1>
+            <p>Let do something good.</p>
+            <div class="important_stuff">
+                <div class="to_do_list">
+                    <h2>Task</h2>
+                    <div class="task">
+                        <div class="task_icon">
+                            <i class="fa-solid fa-lightbulb"></i>
+                        </div>
+                        <div class="task_description">
+                            <h3>Task Title</h3>
+                            <p>Task description goes here. This is a brief overview of the task.</p>
+                        </div>
+                        <div class="point">+10 </div> 
+                    </div>
+                    <div class="task">
+                        <div class="task_icon">
+                            <i class="fa-solid fa-lightbulb"></i>
+                        </div>
+                        <div class="task_description">
+                            <h3>Task Title</h3>
+                            <p>Task description goes here. This is a brief overview of the task.</p>
+                        </div>
+                        <div class="point">+10 </div>
+                    </div>
+            </div>
+            
+                    <div class="ranking">
+                        <h2>Ranking</h2>
+                        <div class="rank">
+                            <div class="rank_icon">
+                                <i class="fa-solid fa-trophy"></i>
+                            </div>
+                            <div class="rank_description">
+                                <p>Rank description goes here. This is a brief overview of the rank.</p>
+                            </div>
+                        
+                                
+
+                        </div>
+
+                    </div>
+                    <div class="weather"></div>
+                </div>
+              
+    </body>
+
+</html>
